@@ -13,7 +13,7 @@ generateBtn.addEventListener("click", async () => {
   statusText.textContent = "Generating...";
 
   try {
-    const response = await fetch("/generate", {
+    const response = await fetch(window.location.href, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
